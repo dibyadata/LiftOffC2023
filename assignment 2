@@ -1,0 +1,17 @@
+#include<stdio.h>
+#inclinclude<stdio.h>
+int main()
+{
+    int D;
+    clrscr();
+    printf("enter the number D");
+    scanf("%d",&D)
+    if(D>0)
+    printf("%d is positive",D);
+    else if(D<0)
+    printf("%d is negative ",D);
+    else if(D= =0)
+    printf("%d is zero");
+    getch()
+    return 0;
+    }
