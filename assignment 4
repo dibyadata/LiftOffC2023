@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+ int a,b;
+ printf("enter two number & operater");
+ scanf("%d%d%c",&a,&b,&c);
+ switch(c)   
+ {
+     case'+':
+     printf("addition is:%d",a+b);
+     break;
+     case'-':
+     printf("substraction is:%d",a-b);
+     break;
+     case'*':
+     printf("multiplication is:%d"a*b);
+     break;
+     case'/':
+     printf("division is %f",a/b);
+     break;
+     default:
+     printf("enter valid c");
+     break;
+     }
+     return 0;
+     }
+     
