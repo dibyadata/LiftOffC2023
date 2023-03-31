@@ -1,16 +1,33 @@
-# include<stdio.h>
-#include<math.h>
-#define pi
-int main(){
-    int r;
-    float pi=3.14,D,C,A;
-    printf("enter the radius");
-    scanf("%d",&r);
-    D=2*r;
-    printf("D of circle:%f"",D);
-    C=2*pi*r;
-    printf("C of circle:%f",C);
-    A=pi*r*r;
-    printf("A of circle:%f",A);
-    return 0;
-    }
+
+#include<stdio.h>
+
+int sort(int a[],int n);
+int main()
+{
+int a[100], i, n;
+printf("Enter Length of array:\n");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+    printf("a[%d]",i);
+    scanf("%d", &a[i]);
+ sort(a, n);
+    printf("Array in ascending order is:\n");
+ for(i=0;i< n;i++)
+ {
+  printf("%d\t", a[i]);
+ }
+}
+}
+int sort(int a[10], int n)
+{
+ int i, j, temp;
+ for(i=0;i< n-1;i++)
+  for(j=i+1;j< n;j++)
+   if(a[i]>a[j])
+   {
+    temp = a[i];
+    a[i] = a[j];
+    a[j] = temp;
+   }
+}
